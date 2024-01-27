@@ -23,12 +23,23 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private LayerMask GroundLayer;
 
+
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine(Fade());
     }
 
+    IEnumerator Fade()
+    {
+	    Color c = GetComponent<Renderer>().material.color;
+	    for (float alpha = 1f; alpha >= 0; alpha -= 0.1f)
+	    {
+		c.a = alpha;
+		GetComponent<Renderer>().material.color = c;
+		yield return new WaitForSeconds(.1f);
+	    }
+    }
     // Update is called once per frame
     void Update()
     {
