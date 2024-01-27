@@ -51,10 +51,7 @@ namespace Weapons
             
             Log("Melee attack");
             
-            // var o = Instantiate(currentWeapon.prefab, transform.position, Quaternion.identity);
-            // var a = o.GetComponent<Animator>();
-            // a.speed = currentWeapon.attackSpeed;
-            // a.Play("Attack");
+            // TODO: Melee attack
         }
         
         private void Throw()
@@ -64,12 +61,12 @@ namespace Weapons
                 Log("Can't throw");
                 return;
             }
-
+            
             if (_playerScript.playerFacingDirection == Vector2.zero)
             {
                 _playerScript.playerFacingDirection = Vector2.right;
             }
-
+            
             var o = Instantiate(currentWeapon.prefab, transform.position + (Vector3.up * 0.5f), Quaternion.identity);
             o.transform.Rotate(0, 0, Vector2.Angle(transform.up, _playerScript.playerFacingDirection));
             o.layer = _playerSpecific.projectileLayer;
