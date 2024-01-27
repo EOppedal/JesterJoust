@@ -70,7 +70,7 @@ public class Player1Script : MonoBehaviour
 
     private bool is_Grounded()
     {
-        return Physics2D.OverlapCircle(GroundCheck.position, 0.2f, GroundLayer);
+        return Physics2D.OverlapCircle(GroundCheck.position, 0.51f, GroundLayer);
     }
 
     private void Flip()

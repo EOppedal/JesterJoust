@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -6,7 +5,7 @@ namespace Weapons
 {
     public class UseWeapons : MonoBehaviour
     {
-        [SerializeField] private Weapon currentWeapon;
+        [SerializeField] public Weapon currentWeapon;
         [SerializeField] private KeyCode hitKey = KeyCode.R;
         [SerializeField] private KeyCode throwKey = KeyCode.T;
 
@@ -40,6 +39,7 @@ namespace Weapons
 
         private void Hit()
         {
+            if(currentWeapon == null) return;
             if (!currentWeapon.isMelee)
             {
                 Log("Weapon can't melee");
@@ -51,6 +51,7 @@ namespace Weapons
         
         private void Throw()
         {
+            if(currentWeapon == null) return;
             if (!currentWeapon.isThrowable)
             {
                 Log("Weapon can't be thrown");
@@ -65,9 +66,9 @@ namespace Weapons
             Log("Throw weapon");
         }
         
-        private static IEnumerator ThrownWeapon(GameObject gameObject)
+        private IEnumerator ThrownWeapon(GameObject gameObject)
         {
-            // RemoveCurrentWeapon();
+            RemoveCurrentWeapon();
             yield return new WaitForSeconds(0.25f);
             gameObject.GetComponent<Collider2D>().enabled = true;
             yield return new WaitForSeconds(1.5f);
