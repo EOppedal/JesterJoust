@@ -6,7 +6,7 @@ namespace Weapons
     {
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject.TryGetComponent(out Damageable damageable))
+            if (other.gameObject.TryGetComponent(out IDamageable damageable))
             {
                 damageable.TakeDamage();
             }

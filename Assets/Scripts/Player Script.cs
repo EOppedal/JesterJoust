@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerScript : MonoBehaviour
+public class PlayerScript : MonoBehaviour, IDamageable
 {
-    // Start is called before the first frame update
     [SerializeField] private KeyCode LeftKey = KeyCode.A;
     [SerializeField] private KeyCode RightKey = KeyCode.D;
     [SerializeField] private KeyCode UpKey = KeyCode.W;
@@ -14,6 +11,8 @@ public class PlayerScript : MonoBehaviour
     public float JumpSpeed;
     
     public Vector2 playerFacingDirection;
+    
+    private SpriteRenderer _spriteRenderer;
 
     private float Horizontal;
     private bool IsFacingRight = true;
@@ -24,6 +23,11 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private BoxCollider2D BC;
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private LayerMask GroundLayer;
+
+    private void Start()
+    {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     private void Update()
     {
@@ -97,5 +101,11 @@ public class PlayerScript : MonoBehaviour
             tempScale.x *= -1f;
             transform.localScale = tempScale;
         }
+    }
+
+    public void TakeDamage()
+    {
+        Debug.Log("Player dead", gameObject);
+        _spriteRenderer.color = Color.red;
     }
 }
