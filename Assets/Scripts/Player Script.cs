@@ -6,9 +6,11 @@ public class PlayerScript : MonoBehaviour, IDamageable
     [SerializeField] private KeyCode RightKey = KeyCode.D;
     [SerializeField] private KeyCode UpKey = KeyCode.W;
     [SerializeField] private KeyCode DownKey = KeyCode.S;
+    [SerializeField] private KeyCode JumpKey = KeyCode.Y;
 
     public float MoveSpeed;
     public float JumpSpeed;
+    public float FallSpeed;
     
     public Vector2 playerFacingDirection;
     
@@ -58,15 +60,27 @@ public class PlayerScript : MonoBehaviour, IDamageable
             Horizontal = 0f;
         }
 
-        if (Input.GetKeyDown(UpKey) && is_Grounded())
+        if (Input.GetKeyDown(JumpKey) && is_Grounded())
         {
             RB.velocity = new Vector2(RB.velocity.x, JumpSpeed);
         }
 
-        if (Input.GetKeyUp(UpKey) && RB.velocity.y > 0f)
+        if (Input.GetKeyUp(JumpKey) && RB.velocity.y > 0f)
         {
             RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y * 0.5f);
         }
+
+        if (Input.GetKeyDown(DownKey))
+        {
+            RB.velocity = new Vector2(RB.velocityX, FallSpeed);
+        }
+
+        if (is_Grounded())
+        {
+            Debug.Log("aaaaaaaa");
+        }
+
+
         Flip();
     }
 
@@ -89,7 +103,7 @@ public class PlayerScript : MonoBehaviour, IDamageable
 
     private bool is_Grounded()
     {
-        return Physics2D.OverlapCircle(GroundCheck.position, 0.51f, GroundLayer);
+        return Physics2D.OverlapCircle(GroundCheck.position, 1.1f, GroundLayer);
     }
 
     private void Flip()

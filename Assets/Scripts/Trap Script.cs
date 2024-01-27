@@ -36,6 +36,15 @@ public class TrapScript : MonoBehaviour, IDamageable
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.TryGetComponent(out IDamageable damageable))
+        {
+            damageable.TakeDamage();
+        }
+        //Destroy(gameObject);
+    }
+
     private bool is_Grounded()
     {
         return Physics2D.OverlapCircle(GroundCheck.position, 0.51f, GroundLayer);
