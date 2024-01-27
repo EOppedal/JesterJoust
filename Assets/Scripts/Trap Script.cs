@@ -33,7 +33,6 @@ public class TrapScript : MonoBehaviour, IDamageable
             RB.isKinematic = true;
             BC.isTrigger = true;
             FallSpeed = 0f;
-            Debug.Log("aaaaaaaaaaaaaaaaa");
         }
     }
 
