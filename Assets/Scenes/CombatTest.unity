@@ -152,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BC: {fileID: 2092932460}
   RB: {fileID: 23903547}
-  GroundCheck: {fileID: 950587815}
+  GroundCheck: {fileID: 23903549}
   GroundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -252,7 +252,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2092932461}
-  - {fileID: 950587815}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &241062524
@@ -635,37 +634,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1295211477295936266, guid: 6bf3180498ce9d14b8c6746ee00d3125, type: 3}
   m_PrefabInstance: {fileID: 1862360571}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &950587814
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 950587815}
-  m_Layer: 0
-  m_Name: Check Ground
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &950587815
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950587814}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.64, y: -5.16, z: -0.04557649}
-  m_LocalScale: {x: 4, y: 5.4, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 23903549}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1273215639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4989813336417148527, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}

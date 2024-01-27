@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JesterP2placeholder.webp_0: 1764431613396755737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
