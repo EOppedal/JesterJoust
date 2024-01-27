@@ -6,17 +6,11 @@ namespace Weapons
     public class Weapon : ScriptableObject
     {
         public GameObject prefab;
-        public float weight;
+        public bool isLethal;
         
         [Header("Throwable")]
         public bool isThrowable;
         public float throwingSpeed;
-        public float throwingDamage;
-        
-        [Header("Melee")]
-        public bool isMelee;
-        public float meleeDamage;
-        public float reach;
-        public float attackSpeed;
+        public float torque;
     }
 }

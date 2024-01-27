@@ -2,11 +2,9 @@ using UnityEngine;
 
 namespace Weapons
 {
-    public class UseWeapons : MonoBehaviour
+    public class UseWeapon : MonoBehaviour
     {
-        [Header("Controls")]
-        [Tooltip("Key for melee hitting with weapon")] [SerializeField] private KeyCode hitKey = KeyCode.R;
-        [Tooltip("Key for throwing weapon")] [SerializeField] private KeyCode throwKey = KeyCode.T;
+        [SerializeField] private KeyCode throwKey = KeyCode.T;
         
         private PlayerScript _playerScript;
         private PlayerSpecific _playerSpecific;
@@ -30,28 +28,10 @@ namespace Weapons
         
         private void Update()
         {
-            if (Input.GetKeyDown(hitKey))
-            {
-                Melee();
-            }
-            
             if (Input.GetKeyDown(throwKey))
             {
                 Throw();
             }
-        }
-        
-        private void Melee()
-        {
-            if (currentWeapon == null || !currentWeapon.isMelee)
-            {
-                Log("Can't melee");
-                return;
-            }
-            
-            Log("Melee attack");
-            
-            // TODO: Melee attack
         }
         
         private void Throw()
@@ -70,7 +50,10 @@ namespace Weapons
             var o = Instantiate(currentWeapon.prefab, transform.position + (Vector3.up * 0.5f), Quaternion.identity);
             o.transform.Rotate(0, 0, Vector2.Angle(transform.up, _playerScript.playerFacingDirection));
             o.layer = _playerSpecific.projectileLayer;
-            o.GetComponent<Rigidbody2D>().velocity = _playerScript.playerFacingDirection * currentWeapon.throwingSpeed;
+            
+            var rb = o.GetComponent<Rigidbody2D>();
+            rb.velocity = _playerScript.playerFacingDirection * currentWeapon.throwingSpeed;
+            rb.AddTorque(currentWeapon.torque);
             
             currentWeapon = null;
         }
