@@ -2,18 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player2Script : MonoBehaviour
+public class PlayerScript : MonoBehaviour
 {
+    // Start is called before the first frame update
+    [SerializeField] private KeyCode LeftKey = KeyCode.A;
+    [SerializeField] private KeyCode RightKey = KeyCode.D;
+    [SerializeField] private KeyCode UpKey = KeyCode.W;
+    [SerializeField] private KeyCode DownKey = KeyCode.S;
+
     public float MoveSpeed;
     public float JumpSpeed;
 
     private float Horizontal;
     private bool IsFacingRight = true;
-    private bool test = false;
-    private bool MovingLeft = false;
     private bool MovingRight = false;
+    private bool MovingLeft = false;
 
     [SerializeField] private Rigidbody2D RB;
+    [SerializeField] private BoxCollider2D BC;
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private LayerMask GroundLayer;
 
@@ -26,43 +32,40 @@ public class Player2Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(RightKey))
         {
             Horizontal = 1f;
             MovingRight = true;
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(LeftKey))
         {
             Horizontal = -1f;
             MovingLeft = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.RightArrow))
+        if (Input.GetKeyUp(RightKey))
         {
             MovingRight = false;
         }
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        if (Input.GetKeyUp(LeftKey))
         {
             MovingLeft = false;
         }
-
 
         if (MovingRight == false && MovingLeft == false && is_Grounded())
         {
             Horizontal = 0f;
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && is_Grounded())
+        if (Input.GetKeyDown(UpKey) && is_Grounded())
         {
             RB.velocity = new Vector2(RB.velocity.x, JumpSpeed);
         }
 
-        if (Input.GetKeyUp(KeyCode.UpArrow) && RB.velocity.y > 0f)
+        if (Input.GetKeyUp(UpKey) && RB.velocity.y > 0f)
         {
             RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y * 0.5f);
         }
-
         Flip();
     }
 
