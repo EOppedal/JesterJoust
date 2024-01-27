@@ -9,7 +9,7 @@ namespace Weapons
         [SerializeField] private KeyCode hitKey = KeyCode.R;
         [SerializeField] private KeyCode throwKey = KeyCode.T;
 
-        private Player1Script player1Script;
+    
         
         [Header("Debug")]
         [SerializeField] private bool isDebugging;
@@ -21,7 +21,7 @@ namespace Weapons
 
         private void Start()
         {
-            player1Script = GetComponent<Player1Script>();
+           
         }
 
         private void Update()
