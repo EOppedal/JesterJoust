@@ -591,6 +591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b4ddf2c156a7d45a3a4559b4af7893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ItemPrefab: {fileID: 5979500002276162706, guid: 57b7e6a85b270d41d9fad7f4ed47e20a, type: 3}
   LeftKey: 97
   RightKey: 100
   UpKey: 119
@@ -870,6 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b4ddf2c156a7d45a3a4559b4af7893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ItemPrefab: {fileID: 0}
   LeftKey: 276
   RightKey: 275
   UpKey: 273

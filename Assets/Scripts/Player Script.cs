@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+
+	public GameObject ItemPrefab;
     // Start is called before the first frame update
     [SerializeField] private KeyCode LeftKey = KeyCode.A;
     [SerializeField] private KeyCode RightKey = KeyCode.D;
@@ -26,9 +28,26 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+    
+StartCoroutine(Fade());
     }
 
+
+IEnumerator Fade()
+{
+    Color c = GetComponent<Renderer>().material.color;
+    for (float alpha = 1f; alpha >= 0; alpha -= 0.1f)
+    {
+        c.a = alpha;
+        GetComponent<Renderer>().material.color = c;
+        yield return new WaitForSeconds(1f);
+        	float xrand = Random.Range(-10.0f, 10.0f); 
+	Vector2 v = new Vector2(xrand, 0);
+	Instantiate(ItemPrefab, v, Quaternion.identity);
+	Debug.Log("Hello World");
+
+    }
+}
     // Update is called once per frame
     void Update()
     {
