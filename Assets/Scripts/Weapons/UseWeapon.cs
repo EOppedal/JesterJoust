@@ -47,7 +47,7 @@ namespace Weapons
                 _playerScript.playerFacingDirection = Vector2.right;
             }
             
-            var o = Instantiate(currentWeapon.prefab, transform.position + (Vector3.up * 0.5f), Quaternion.identity);
+            var o = Instantiate(currentWeapon.prefab, transform.position + (Vector3.up * 0.75f), Quaternion.identity);
             o.transform.Rotate(0, 0, Vector2.Angle(transform.up, _playerScript.playerFacingDirection));
             o.layer = _playerSpecific.projectileLayer;
             

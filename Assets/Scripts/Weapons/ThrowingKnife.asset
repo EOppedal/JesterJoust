@@ -16,4 +16,4 @@ MonoBehaviour:
   isLethal: 1
   isThrowable: 1
   throwingSpeed: 20
-  torque: 5
+  torque: 50
