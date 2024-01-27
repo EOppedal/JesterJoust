@@ -9,7 +9,7 @@ namespace Weapons
         private PlayerScript _playerScript;
         private PlayerSpecific _playerSpecific;
         public Weapon currentWeapon;
-        
+        public GameObject holdingWeapon;
         #region ---Debugging---
         [Header("Debug")]
         [SerializeField] private bool isDebugging;
@@ -56,6 +56,7 @@ namespace Weapons
             rb.AddTorque(currentWeapon.torque);
             
             currentWeapon = null;
+            holdingWeapon.GetComponent<Renderer>().enabled = false;
         }
     }
 }
