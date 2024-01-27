@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private KeyCode RightKey = KeyCode.D;
     [SerializeField] private KeyCode UpKey = KeyCode.W;
     [SerializeField] private KeyCode DownKey = KeyCode.S;
+    [SerializeField] private KeyCode JumpKey = KeyCode.T;
 
     public float MoveSpeed;
     public float JumpSpeed;
@@ -57,12 +58,12 @@ public class PlayerScript : MonoBehaviour
             Horizontal = 0f;
         }
 
-        if (Input.GetKeyDown(UpKey) && is_Grounded())
+        if (Input.GetKeyDown(JumpKey) && is_Grounded())
         {
             RB.velocity = new Vector2(RB.velocity.x, JumpSpeed);
         }
 
-        if (Input.GetKeyUp(UpKey) && RB.velocity.y > 0f)
+        if (Input.GetKeyUp(JumpKey) && RB.velocity.y > 0f)
         {
             RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y * 0.5f);
         }
