@@ -8,13 +8,8 @@ namespace Weapons
         [SerializeField] private Weapon weapon; 
         public Weapon PickupWeapon()
         {
-            Debug.Log("PickupWeapon");
+            Debug.Log("Picking up: " + weapon.name);
             return weapon;
         }
     }
-}
-
-public interface IPickupWeapon
-{
-    public Weapon PickupWeapon();
 }
