@@ -276,7 +276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faf60e6745f04bc42b3d45976e79abcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  despawnTime: 2
 --- !u!114 &344069726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,6 +380,7 @@ MonoBehaviour:
   GroundLayer:
     serializedVersion: 2
     m_Bits: 64
+  FallSpeed: 0
 --- !u!212 &428820717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -834,13 +834,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.62, y: 0.46}
+    oldSize: {x: 1.02, y: 1.89}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.7, y: 0.6}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!50 &1709516378
 Rigidbody2D:
@@ -912,7 +912,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4753702385071775785, guid: 3ab9251df88cd592cb6e5dd8bc964d63, type: 3}
+  m_Sprite: {fileID: 1678739647518732207, guid: c46fd79720df3dfebb1bb5f9d08eb52b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -933,7 +933,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.3882, y: -0.1344, z: 0}
-  m_LocalScale: {x: 4, y: 5.4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1735642760}
@@ -1114,13 +1114,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.62, y: 0.46}
+    oldSize: {x: 1.02, y: 1.89}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.7, y: 0.6}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!50 &1734804120
 Rigidbody2D:
@@ -1192,8 +1192,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4753702385071775785, guid: 3ab9251df88cd592cb6e5dd8bc964d63, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.18643212, a: 1}
+  m_Sprite: {fileID: 1764431613396755737, guid: c97a20423f5794458a0cdd61ef95bab7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1213,7 +1213,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.9200006, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 5.4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1212183394}
