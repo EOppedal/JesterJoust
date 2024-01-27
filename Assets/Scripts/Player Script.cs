@@ -12,6 +12,8 @@ public class PlayerScript : MonoBehaviour
 
     public float MoveSpeed;
     public float JumpSpeed;
+    
+    public Vector2 playerFacingDirection;
 
     private float Horizontal;
     private bool IsFacingRight = true;
@@ -23,15 +25,10 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private LayerMask GroundLayer;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        PlayerDirection();
+        
         if (Input.GetKeyDown(RightKey))
         {
             Horizontal = 1f;
@@ -67,6 +64,18 @@ public class PlayerScript : MonoBehaviour
             RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y * 0.5f);
         }
         Flip();
+    }
+
+    private void PlayerDirection()
+    {
+        Vector2 direction;
+        direction.x = Input.GetKey(RightKey) ? 1 : 0;
+        direction.x += Input.GetKey(LeftKey) ? -1 : 0;
+        
+        direction.y = Input.GetKey(UpKey) ? 1 : 0;
+        direction.y += Input.GetKey(DownKey) ? -1 : 0;
+        
+        playerFacingDirection = direction;
     }
 
     private void FixedUpdate()

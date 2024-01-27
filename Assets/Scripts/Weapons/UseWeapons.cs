@@ -65,7 +65,7 @@ namespace Weapons
             var o = Instantiate(currentWeapon.prefab, transform.position, Quaternion.identity);
             o.layer = _playerSpecific.projectileLayer;
             
-            o.GetComponent<Rigidbody2D>().velocity = transform.right * currentWeapon.throwingSpeed * transform.localScale.x;
+            o.GetComponent<Rigidbody2D>().velocity = transform.right * currentWeapon.throwingSpeed * _playerScript.playerFacingDirection;
             
             RemoveCurrentWeapon();
             
