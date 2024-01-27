@@ -2,8 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player1Script : MonoBehaviour
+public class PlayerScript : MonoBehaviour
 {
+    // Start is called before the first frame update
+    [SerializeField] private KeyCode LeftKey = KeyCode.A;
+    [SerializeField] private KeyCode RightKey = KeyCode.D;
+    [SerializeField] private KeyCode UpKey = KeyCode.W;
+    [SerializeField] private KeyCode DownKey = KeyCode.S;
+
     public float MoveSpeed;
     public float JumpSpeed;
 
@@ -13,34 +19,35 @@ public class Player1Script : MonoBehaviour
     private bool MovingLeft = false;
 
     [SerializeField] private Rigidbody2D RB;
+    [SerializeField] private BoxCollider2D BC;
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private LayerMask GroundLayer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(RightKey))
         {
             Horizontal = 1f;
             MovingRight = true;
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(LeftKey))
         {
             Horizontal = -1f;
             MovingLeft = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.D))
+        if (Input.GetKeyUp(RightKey))
         {
             MovingRight = false;
         }
-        if (Input.GetKeyUp(KeyCode.A))
+        if (Input.GetKeyUp(LeftKey))
         {
             MovingLeft = false;
         }
@@ -50,16 +57,15 @@ public class Player1Script : MonoBehaviour
             Horizontal = 0f;
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && is_Grounded())
+        if (Input.GetKeyDown(UpKey) && is_Grounded())
         {
             RB.velocity = new Vector2(RB.velocity.x, JumpSpeed);
         }
 
-        if (Input.GetKeyUp(KeyCode.W) && RB.velocity.y > 0f)
+        if (Input.GetKeyUp(UpKey) && RB.velocity.y > 0f)
         {
             RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y * 0.5f);
         }
-
         Flip();
     }
 
@@ -70,7 +76,7 @@ public class Player1Script : MonoBehaviour
 
     private bool is_Grounded()
     {
-        return Physics2D.OverlapCircle(GroundCheck.position, 0.51f, GroundLayer);
+        return Physics2D.OverlapCircle(GroundCheck.position, 0.2f, GroundLayer);
     }
 
     private void Flip()

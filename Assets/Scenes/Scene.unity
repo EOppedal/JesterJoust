@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 1709516379}
   - component: {fileID: 1709516378}
   - component: {fileID: 1709516377}
-  - component: {fileID: 1709516376}
+  - component: {fileID: 1709516381}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -436,25 +436,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1709516376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709516375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 616dae76cb6fc854cbecea7ab734d5eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 10
-  JumpSpeed: 10
-  RB: {fileID: 1709516378}
-  GroundCheck: {fileID: 1735642760}
-  GroundLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!61 &1709516377
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -598,6 +579,30 @@ Transform:
   - {fileID: 1735642760}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1709516381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709516375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b4ddf2c156a7d45a3a4559b4af7893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftKey: 97
+  RightKey: 100
+  UpKey: 119
+  DownKey: 115
+  MoveSpeed: 10
+  JumpSpeed: 10
+  RB: {fileID: 1709516378}
+  BC: {fileID: 1709516377}
+  GroundCheck: {fileID: 1735642760}
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1726354784
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,7 +707,7 @@ GameObject:
   - component: {fileID: 1734804121}
   - component: {fileID: 1734804120}
   - component: {fileID: 1734804119}
-  - component: {fileID: 1734804118}
+  - component: {fileID: 1734804123}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -710,25 +715,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1734804118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734804117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a7d83afe25212469de6f2462339cd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 10
-  JumpSpeed: 10
-  RB: {fileID: 1734804120}
-  GroundCheck: {fileID: 1212183394}
-  GroundLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!61 &1734804119
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -872,6 +858,30 @@ Transform:
   - {fileID: 1212183394}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1734804123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734804117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b4ddf2c156a7d45a3a4559b4af7893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftKey: 276
+  RightKey: 275
+  UpKey: 273
+  DownKey: 274
+  MoveSpeed: 10
+  JumpSpeed: 10
+  RB: {fileID: 1734804120}
+  BC: {fileID: 1734804119}
+  GroundCheck: {fileID: 1212183394}
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1735642759
 GameObject:
   m_ObjectHideFlags: 0
