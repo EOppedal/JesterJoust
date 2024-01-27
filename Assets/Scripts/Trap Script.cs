@@ -1,58 +1,55 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
 
 public class TrapScript : MonoBehaviour, IDamageable
 {
+    // [SerializeField] private BoxCollider2D BC;
+    private Rigidbody2D _rigidbody;
+    // [SerializeField] private Transform GroundCheck;
+    // [SerializeField] private LayerMask GroundLayer;
 
-    [SerializeField] private BoxCollider2D BC;
-    [SerializeField] private Rigidbody2D RB;
-    [SerializeField] private Transform GroundCheck;
-    [SerializeField] private LayerMask GroundLayer;
+    // public float FallSpeed = 0f;
 
-    public float FallSpeed = 0f;
+    // void Start()
+    // {
+    //     RB.isKinematic = true;
+    //     BC.enabled = true;
+    // }
 
-    // Start is called before the first frame update
-    void Start()
+    // void Update()
+    // {
+    //     RB.velocity = new Vector2(0f, FallSpeed);
+    //
+    //     if (is_Grounded())
+    //     {
+    //         RB.isKinematic = true;
+    //         BC.isTrigger = true;
+    //         FallSpeed = 0f;
+    //     }
+    // }
+
+    private void Start()
     {
-      
-        RB.isKinematic = true;
-        BC.enabled = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        RB.velocity = new Vector2(0f, FallSpeed);
-
-        if (is_Grounded() == true)
-        {
-            RB.isKinematic = true;
-            BC.isTrigger = true;
-            FallSpeed = 0f;
-        }
+        _rigidbody = GetComponent<Rigidbody2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.TryGetComponent(out IDamageable damageable))
         {
-            damageable.TakeDamage();
+            damageable.TakeDamage(true);
         }
-        //Destroy(gameObject);
     }
 
-    private bool is_Grounded()
-    {
-        return Physics2D.OverlapCircle(GroundCheck.position, 0.51f, GroundLayer);
-    }
+    // private bool is_Grounded()
+    // {
+    //     return Physics2D.OverlapCircle(GroundCheck.position, 0.51f, GroundLayer);
+    // }
 
-    public void TakeDamage()
+    public void TakeDamage(bool isLethal)
     {
-        RB.isKinematic = false;
-        FallSpeed = -7.5f;
+        _rigidbody.gravityScale = 1;
+
+        // RB.isKinematic = false;
+        // FallSpeed = -7.5f;
     }
 }

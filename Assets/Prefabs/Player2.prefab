@@ -8,21 +8,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2104853928747181923, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
+      propertyPath: thisPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2840975824629092249, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: UpKey
-      value: 0
+      value: 273
       objectReference: {fileID: 0}
     - target: {fileID: 2840975824629092249, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: DownKey
-      value: 0
+      value: 274
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840975824629092249, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
+      propertyPath: JumpKey
+      value: 258
       objectReference: {fileID: 0}
     - target: {fileID: 2840975824629092249, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: LeftKey
-      value: 0
+      value: 276
       objectReference: {fileID: 0}
     - target: {fileID: 2840975824629092249, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: RightKey
-      value: 0
+      value: 275
       objectReference: {fileID: 0}
     - target: {fileID: 2840975824629092249, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: JumpSpeed
@@ -42,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4989813336417148527, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: m_Name
-      value: Player2 Variant
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 5017046992452114164, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: m_LocalScale.x
@@ -50,11 +58,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5017046992452114164, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.05
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5017046992452114164, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.94
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5017046992452114164, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -130,37 +138,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7512802390399636107, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: throwKey
-      value: 0
+      value: 259
       objectReference: {fileID: 0}
     - target: {fileID: 8035947878197153719, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
       propertyPath: pickupKey
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8035947878197153719, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
+      propertyPath: interactKey
+      value: 257
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2223931174046177925, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4989813336417148527, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7949117562368382135}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
---- !u!1 &8741462359502743684 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4989813336417148527, guid: 9c96e59f17f2a7b4f9d55fb5299519bf, type: 3}
-  m_PrefabInstance: {fileID: 4355131994451834603}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7949117562368382135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8741462359502743684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 555c9c1d4cb735447bd5797dc07b50bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisPlayer: 1
-  projectileLayer: 0

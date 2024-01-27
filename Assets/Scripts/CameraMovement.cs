@@ -19,8 +19,8 @@ public class CameraMovement : MonoBehaviour
         var player2Pos = player2.position;
 
         var pos = (player1Pos + player2Pos) * 0.5f;
-        pos.y = -0.55f;
-        pos.z = -10;
+        pos.y = cameraTransform.position.y;
+        pos.z = cameraTransform.position.z;
         cameraTransform.position = pos;
         
         _camera.orthographicSize = Math.Clamp(Math.Abs((player1Pos.x - player2Pos.x) * 0.5f), 4, 36);

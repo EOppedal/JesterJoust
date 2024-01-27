@@ -15,6 +15,7 @@ public class PlayerScript : MonoBehaviour, IDamageable
     public Vector2 playerFacingDirection;
     
     private SpriteRenderer _spriteRenderer;
+    private PlayerSpecific _playerSpecific;
 
     private float Horizontal;
     private bool IsFacingRight = true;
@@ -28,6 +29,7 @@ public class PlayerScript : MonoBehaviour, IDamageable
 
     private void Start()
     {
+        _playerSpecific = GetComponent<PlayerSpecific>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -74,13 +76,7 @@ public class PlayerScript : MonoBehaviour, IDamageable
         {
             RB.velocity = new Vector2(RB.velocityX, FallSpeed);
         }
-
-        if (is_Grounded())
-        {
-            Debug.Log("aaaaaaaa");
-        }
-
-
+        
         Flip();
     }
 
@@ -117,9 +113,23 @@ public class PlayerScript : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(bool isLethal)
     {
-        Debug.Log("Player dead", gameObject);
-        _spriteRenderer.color = Color.red;
+        if (!isLethal) return;
+        switch (_playerSpecific.thisPlayer)
+        {
+            case PlayerSpecific.Player.Player1:
+                ScoreManager.Player2WinRound();
+                break;
+            case PlayerSpecific.Player.Player2:
+                ScoreManager.Player1WinRound();
+                break;
+            default:
+                Debug.Log("Player not valid");
+                break;
+        }
+
+        // Debug.Log("Player dead", gameObject);
+        // _spriteRenderer.color = Color.red;
     }
 }

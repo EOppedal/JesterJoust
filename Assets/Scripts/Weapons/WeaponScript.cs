@@ -16,7 +16,7 @@ namespace Weapons
         {
             if (other.gameObject.TryGetComponent(out IDamageable damageable))
             {
-                damageable.TakeDamage();
+                damageable.TakeDamage(weapon.isLethal);
             }
             Destroy(gameObject);
         }

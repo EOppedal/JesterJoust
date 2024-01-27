@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Canvas : MonoBehaviour
 {
-    [SerializeField] private TextMesh mesh;
+    [SerializeField] private Text text;
 
     private void Start()
     {
@@ -11,6 +12,6 @@ public class Canvas : MonoBehaviour
 
     private void DisplayWinner(string winner)
     {
-        mesh.text = winner + " Wins";
+        text.text = winner + " Wins";
     }
 }

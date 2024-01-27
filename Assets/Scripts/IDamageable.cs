@@ -1,4 +1,4 @@
-interface IDamageable
+internal interface IDamageable
 {
-    void TakeDamage();
+    void TakeDamage(bool isLethal);
 }

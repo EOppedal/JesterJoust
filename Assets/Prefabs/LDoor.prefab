@@ -50,11 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4700507763423781254, guid: 62257eff7aff2b641a832f7be071d521, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.39
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 8314397546590632440, guid: 62257eff7aff2b641a832f7be071d521, type: 3}
       propertyPath: m_Name
-      value: LDoor Variant
+      value: LDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

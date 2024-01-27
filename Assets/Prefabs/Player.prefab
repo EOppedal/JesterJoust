@@ -178,7 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99b41dc8876398d418af38b0dba28785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitKey: 114
   throwKey: 116
   currentWeapon: {fileID: 0}
   isDebugging: 0
@@ -212,8 +211,10 @@ MonoBehaviour:
   RightKey: 100
   UpKey: 119
   DownKey: 115
+  JumpKey: 114
   MoveSpeed: 5
   JumpSpeed: 7.5
+  FallSpeed: 0
   playerFacingDirection: {x: 0, y: 0}
   RB: {fileID: 7230445129846551169}
   BC: {fileID: 7090874698809009056}
