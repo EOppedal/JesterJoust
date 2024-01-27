@@ -16,5 +16,7 @@ namespace Weapons
         [Header("Melee")]
         public bool isMelee;
         public float meleeDamage;
+        public float reach;
+        public float attackSpeed;
     }
 }

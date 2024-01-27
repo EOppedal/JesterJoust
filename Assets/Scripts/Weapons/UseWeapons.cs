@@ -32,7 +32,7 @@ namespace Weapons
         {
             if (Input.GetKeyDown(hitKey))
             {
-                Hit();
+                Melee();
             }
             
             if (Input.GetKeyDown(throwKey))
@@ -41,39 +41,35 @@ namespace Weapons
             }
         }
         
-        private void Hit()
+        private void Melee()
         {
-            if(currentWeapon == null) return;
-            if (!currentWeapon.isMelee)
+            if (currentWeapon == null || !currentWeapon.isMelee)
             {
-                Log("Weapon can't melee");
+                Log("Can't melee");
                 return;
             }
             
-            Log("Hit");
+            Log("Melee attack");
+            
+            // var o = Instantiate(currentWeapon.prefab, transform.position, Quaternion.identity);
+            // var a = o.GetComponent<Animator>();
+            // a.speed = currentWeapon.attackSpeed;
+            // a.Play("Attack");
         }
         
         private void Throw()
         {
-            if(currentWeapon == null) return;
-            if (!currentWeapon.isThrowable)
+            if (currentWeapon == null || !currentWeapon.isThrowable)
             {
-                Log("Weapon can't be thrown");
+                Log("Can't throw");
                 return;
             }
-            
-            var o = Instantiate(currentWeapon.prefab, transform.position, Quaternion.identity);
+
+            var o = Instantiate(currentWeapon.prefab, transform.position + (Vector3.up * 0.5f), Quaternion.identity);
+            o.transform.Rotate(0, 0, Vector2.Angle(transform.up, _playerScript.playerFacingDirection));
             o.layer = _playerSpecific.projectileLayer;
+            o.GetComponent<Rigidbody2D>().velocity = _playerScript.playerFacingDirection * currentWeapon.throwingSpeed;
             
-            o.GetComponent<Rigidbody2D>().velocity = transform.right * currentWeapon.throwingSpeed * _playerScript.playerFacingDirection;
-            
-            RemoveCurrentWeapon();
-            
-            Log("Throw weapon");
-        }
-        
-        private void RemoveCurrentWeapon()
-        {
             currentWeapon = null;
         }
     }

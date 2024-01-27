@@ -15,7 +15,9 @@ MonoBehaviour:
   prefab: {fileID: 2265701727150319621, guid: 6bf3180498ce9d14b8c6746ee00d3125, type: 3}
   weight: 1
   isThrowable: 1
-  throwingSpeed: 50
+  throwingSpeed: 20
   throwingDamage: 3
   isMelee: 0
   meleeDamage: 0
+  reach: 0
+  attackSpeed: 0
