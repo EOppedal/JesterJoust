@@ -7,6 +7,7 @@ public class Interact : MonoBehaviour
     [SerializeField] private GameObject inTriggerIndicator;
     
     private UseWeapon _useWeapon;
+    public GameObject weaponSprite;
     private IWeaponPickup _weapon;
     private IDoor _door;
     private bool _isInWeaponTrigger;
@@ -23,6 +24,7 @@ public class Interact : MonoBehaviour
         {
             _useWeapon.currentWeapon = _weapon.Pickup();
             inTriggerIndicator.SetActive(false);
+            weaponSprite.GetComponent<Renderer>().enabled = true;
         }
         
         if (Input.GetKeyDown(interactKey) && _isInInteractTrigger)

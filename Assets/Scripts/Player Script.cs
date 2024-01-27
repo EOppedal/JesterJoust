@@ -7,10 +7,8 @@ public class PlayerScript : MonoBehaviour, IDamageable
     [SerializeField] private KeyCode UpKey = KeyCode.W;
     [SerializeField] private KeyCode DownKey = KeyCode.S;
     [SerializeField] private KeyCode JumpKey = KeyCode.Y;
-    [SerializeField] private KeyCode EquipKey = KeyCode.B;
     
 
-    [SerializeField] public GameObject equippedWeapon;
     public float MoveSpeed;
     public float JumpSpeed;
     public float FallSpeed;
@@ -42,10 +40,6 @@ public class PlayerScript : MonoBehaviour, IDamageable
         {
             Horizontal = 1f;
             MovingRight = true;
-        }
-        if (Input.GetKeyDown(EquipKey))
-        {
-            equippedWeapon.GetComponent<Renderer>().enabled ^= true;
         }
 
 
