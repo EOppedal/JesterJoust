@@ -4,12 +4,14 @@ namespace Weapons
 {
     public class UseWeapon : MonoBehaviour
     {
+
         [SerializeField] private KeyCode throwKey = KeyCode.T;
         
         private PlayerScript _playerScript;
         private PlayerSpecific _playerSpecific;
         public Weapon currentWeapon;
-        
+        public GameObject weaponSprite;
+
         #region ---Debugging---
         [Header("Debug")]
         [SerializeField] private bool isDebugging;
@@ -56,6 +58,7 @@ namespace Weapons
             rb.AddTorque(currentWeapon.torque);
             
             currentWeapon = null;
+            weaponSprite.GetComponent<Renderer>().enabled = false;
         }
     }
 }

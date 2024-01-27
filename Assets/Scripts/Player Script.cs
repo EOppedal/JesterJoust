@@ -7,6 +7,7 @@ public class PlayerScript : MonoBehaviour, IDamageable
     [SerializeField] private KeyCode UpKey = KeyCode.W;
     [SerializeField] private KeyCode DownKey = KeyCode.S;
     [SerializeField] private KeyCode JumpKey = KeyCode.Y;
+    
 
     public float MoveSpeed;
     public float JumpSpeed;
@@ -40,6 +41,8 @@ public class PlayerScript : MonoBehaviour, IDamageable
             Horizontal = 1f;
             MovingRight = true;
         }
+
+
         if (Input.GetKeyDown(LeftKey))
         {
             Horizontal = -1f;
