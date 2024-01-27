@@ -77,7 +77,7 @@ public class PlayerScript : MonoBehaviour, IDamageable
 
         if (is_Grounded())
         {
-            Debug.Log("aaaaaaaa");
+
         }
 
 
