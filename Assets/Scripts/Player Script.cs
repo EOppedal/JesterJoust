@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
 
-	public GameObject ItemPrefab;
+	public GameObject[] prefabItems;
+	
     // Start is called before the first frame update
     [SerializeField] private KeyCode LeftKey = KeyCode.A;
     [SerializeField] private KeyCode RightKey = KeyCode.D;
@@ -40,10 +41,14 @@ IEnumerator Fade()
     {
         c.a = alpha;
         GetComponent<Renderer>().material.color = c;
-        yield return new WaitForSeconds(1f);
-        	float xrand = Random.Range(-10.0f, 10.0f); 
-	Vector2 v = new Vector2(xrand, 0);
-	Instantiate(ItemPrefab, v, Quaternion.identity);
+        yield return new WaitForSeconds(2f);
+
+	//Choose random X position and random prefab item to spawn
+        float xrand = Random.Range(-10.0f, 10.0f); 
+                float yrand = Random.Range(-5.0f, 5.0f); 
+	Vector2 v = new Vector2(xrand, yrand);
+	int index = Random.Range(0, 4);
+	Instantiate(prefabItems[index], v, Quaternion.identity);
 	Debug.Log("Hello World");
 
     }

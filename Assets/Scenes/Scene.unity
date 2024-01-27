@@ -591,7 +591,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b4ddf2c156a7d45a3a4559b4af7893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemPrefab: {fileID: 5979500002276162706, guid: 57b7e6a85b270d41d9fad7f4ed47e20a, type: 3}
+  prefabItems:
+  - {fileID: 5979500002276162706, guid: 57b7e6a85b270d41d9fad7f4ed47e20a, type: 3}
+  - {fileID: 5974887738357468382, guid: c99225c23f2f7528e9d1a58334763db7, type: 3}
+  - {fileID: 7555560121836976450, guid: 2c7e53bb88756bbe28c8b23cc7fc9b51, type: 3}
+  - {fileID: 4634778053031976306, guid: 72cdecacbc7ac51dda103dcb48c5cd86, type: 3}
+  - {fileID: 8608370947495322952, guid: e25d4c9bc2b39bd7ca2e783b51533cb3, type: 3}
   LeftKey: 97
   RightKey: 100
   UpKey: 119
@@ -871,7 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b4ddf2c156a7d45a3a4559b4af7893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemPrefab: {fileID: 0}
+  prefabItems: []
   LeftKey: 276
   RightKey: 275
   UpKey: 273
