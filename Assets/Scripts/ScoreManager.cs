@@ -96,4 +96,9 @@ public class ScoreManager : MonoBehaviour
         
         Destroy(gameObject);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
