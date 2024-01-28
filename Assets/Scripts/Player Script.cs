@@ -12,8 +12,6 @@ public class PlayerScript : MonoBehaviour, IDamageable
     [SerializeField] float JumpSpeed;
     [SerializeField] float FallSpeed;
     
-    //public AudioSource audioSource;
-    
     public Vector2 playerFacingDirection;
     
     private PlayerSpecific _playerSpecific;
@@ -63,11 +61,6 @@ public class PlayerScript : MonoBehaviour, IDamageable
         if (Input.GetKeyUp(JumpKey) && _rigidbody.velocity.y > 0f)
         {
             _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * 0.5f);
-        }
-
-        if (Input.GetKeyDown(DownKey))
-        {
-            _rigidbody.velocity = new Vector2(_rigidbody.velocityX, FallSpeed);
         }
 
         if (_rigidbody.velocity.y > 0f)
@@ -120,11 +113,9 @@ public class PlayerScript : MonoBehaviour, IDamageable
         {
             case PlayerSpecific.Player.Player1:
                 ScoreManager.Player2WinRound();
-                //audioSource.Play();
                 break;
             case PlayerSpecific.Player.Player2:
                 ScoreManager.Player1WinRound();
-                //audioSource.Play();
                 break;
             default:
                 Debug.Log("Player not valid");
