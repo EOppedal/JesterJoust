@@ -10,6 +10,8 @@ public class Interact : MonoBehaviour
     private UseWeapon _useWeapon;
     private IWeaponPickup _weapon;
     private IDoor _door;
+    private Animator _animator;
+    
     private bool _isInWeaponTrigger;
     private bool _isInInteractTrigger;
 
@@ -18,12 +20,14 @@ public class Interact : MonoBehaviour
         _useWeapon = GetComponent<UseWeapon>();
         holdingWeapon = transform.GetChild(0).GetComponent<SpriteRenderer>();
         holdingWeapon.enabled = false;
+        _animator = GetComponent<Animator>();
     }
     
     private void Update()
     {
         if (Input.GetKeyDown(interactKey) && _isInWeaponTrigger && _useWeapon.currentWeapon == null)
         {
+            _animator.Play("Grab");
             _useWeapon.currentWeapon = _weapon.Pickup();
             inTriggerIndicator.SetActive(false);
             holdingWeapon.enabled = true;

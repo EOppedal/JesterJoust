@@ -18,8 +18,6 @@ public class ScoreManager : MonoBehaviour
     private static readonly Action Restart = ResetRound;
     public static Action Player1WinRound;
     public static Action Player2WinRound;
-    public static Action<string> Victory;
-
 
     private void Start()
     {
@@ -30,9 +28,13 @@ public class ScoreManager : MonoBehaviour
         
         DontDestroyOnLoad(gameObject);
         
-        Victory += DisplayWinner;
         Player1WinRound += _player1GainPoints;
         Player2WinRound += _player2GainPoints;
+    }
+    
+    private void DisplayWinner(string winner)
+    {
+        winnerText.text = winner + " Wins";
     }
     
     private void _player1GainPoints()
@@ -42,7 +44,7 @@ public class ScoreManager : MonoBehaviour
         if (_player1Points >= pointsToWin)
         {
             canvas.SetActive(true);
-            Victory.Invoke("Player1");
+            DisplayWinner("Player1");
             return;
         }
         
@@ -56,7 +58,7 @@ public class ScoreManager : MonoBehaviour
         if (_player2Points >= pointsToWin)
         {
             canvas.SetActive(true);
-            Victory.Invoke("Player2");
+            DisplayWinner("Player2");
         }
         
         Restart.Invoke();
@@ -85,11 +87,7 @@ public class ScoreManager : MonoBehaviour
     public void MainMenu()
     {
         canvas.SetActive(false);
-        SceneManager.LoadScene("SpawnItems");
-    }
-    
-    private void DisplayWinner(string winner)
-    {
-        winnerText.text = winner + " Wins";
+        SceneManager.LoadScene("MainMenu");
+        Destroy(gameObject);
     }
 }

@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: af4f1cae08ac58044bbaa7ec9fc2461c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 32
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638420031945067688
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: JesterP1_Frame_0
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 106
+      width: 25
+      height: 47
+    spriteID: 45a340395ac690d4bbb9e77d5894562c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 106}
+  - name: JesterP1_Frame_1
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 106
+      width: 25
+      height: 46
+    spriteID: d28b9eb3ddfecee42a45218f07bcb2cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 106}
+  - name: JesterP1_Frame_2
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 440
+      y: 106
+      width: 25
+      height: 45
+    spriteID: 59c2ff31316daaa41947d3ff774b216f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 440, y: 106}
+  - name: JesterP1_Frame_3
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 106
+      width: 25
+      height: 46
+    spriteID: 18c491e8eaabf8d448ddc2dddcef4952
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 106}
+  - name: JesterP1_Frame_4
+    originalName: 
+    pivot: {x: 0.45833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 296
+      y: 53
+      width: 24
+      height: 45
+    spriteID: c01843ca10369f14b8718b6c31e690e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 296, y: 53}
+  - name: JesterP1_Frame_5
+    originalName: 
+    pivot: {x: 0.52380955, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 214
+      y: 161
+      width: 21
+      height: 44
+    spriteID: ac9e39e0afe18fb4daadb0dd69903e7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 214, y: 161}
+  - name: JesterP1_Frame_6
+    originalName: 
+    pivot: {x: 0.52380955, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 156
+      y: 161
+      width: 21
+      height: 46
+    spriteID: 97e9f2b3038f1f14a8557c55074171a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 156, y: 161}
+  - name: JesterP1_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 161
+      width: 22
+      height: 45
+    spriteID: 80d0e0794bd08ee46a5061d88112496e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 161}
+  - name: JesterP1_Frame_8
+    originalName: 
+    pivot: {x: 0.47826087, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 161
+      width: 23
+      height: 43
+    spriteID: 9cc87a2b0307228428b7875b3f80c975
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 161}
+  - name: JesterP1_Frame_9
+    originalName: 
+    pivot: {x: 0.52380955, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 161
+      width: 21
+      height: 46
+    spriteID: b8bbd7a93d190044fa8a9560c3c4012f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 185, y: 161}
+  - name: JesterP1_Frame_10
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 106
+      width: 25
+      height: 46
+    spriteID: 893967a7cc6a4b44e84171bd7407e896
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 106}
+  - name: JesterP1_Frame_11
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 456
+      y: 53
+      width: 25
+      height: 41
+    spriteID: 1bd0f95f1033cb24eaa9ed22c9dd2b03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 456, y: 53}
+  - name: JesterP1_Frame_12
+    originalName: 
+    pivot: {x: 0.47368422, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 301
+      y: 161
+      width: 19
+      height: 47
+    spriteID: 4311a87863b5a8645855b06bb14ded36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 301, y: 161}
+  - name: JesterP1_Frame_13
+    originalName: 
+    pivot: {x: 0.48, y: -0.20454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 473
+      y: 106
+      width: 25
+      height: 44
+    spriteID: 65a89d7bbf3afeb48931db4220c27997
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 473, y: 106}
+  - name: JesterP1_Frame_14
+    originalName: 
+    pivot: {x: 0.4814815, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 405
+      y: 106
+      width: 27
+      height: 42
+    spriteID: 5ee34d339c6834843945862362220f46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 405, y: 106}
+  - name: JesterP1_Frame_15
+    originalName: 
+    pivot: {x: 0.48, y: -0.22727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 53
+      width: 25
+      height: 44
+    spriteID: 6391c831ccd9aab4a9d5ae1737ed30b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 263, y: 53}
+  - name: JesterP1_Frame_16
+    originalName: 
+    pivot: {x: 0.52380955, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 161
+      width: 21
+      height: 49
+    spriteID: 3421cf4449ba6304995a5555048804ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 161}
+  - name: JesterP1_Frame_17
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 4
+      width: 25
+      height: 41
+    spriteID: 70f174bbe07c5ec4ba366a6e31037691
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 4}
+  - name: JesterP1_Frame_18
+    originalName: 
+    pivot: {x: 0.47826087, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 161
+      width: 23
+      height: 47
+    spriteID: 43490dc8f696fc74e85c9fe770fc9a86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 161}
+  - name: JesterP1_Frame_19
+    originalName: 
+    pivot: {x: 0.52, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 240
+      y: 106
+      width: 25
+      height: 46
+    spriteID: c9ae91d0f23aefe469fdde73f1ce7dc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 240, y: 106}
+  - name: JesterP1_Frame_20
+    originalName: 
+    pivot: {x: 0.5714286, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 53
+      width: 28
+      height: 44
+    spriteID: 3e96ca5fea71d80478b113ba256c3c10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 53}
+  - name: JesterP1_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 53
+      width: 32
+      height: 45
+    spriteID: 861ac7289dc959d43add90d67bc78543
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 53}
+  - name: JesterP1_Frame_22
+    originalName: 
+    pivot: {x: 0.39999998, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 328
+      y: 53
+      width: 25
+      height: 43
+    spriteID: 5d6679d29d383f84aba14245ccdd7d24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 328, y: 53}
+  - name: JesterP1_Frame_23
+    originalName: 
+    pivot: {x: 0.52, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 273
+      y: 106
+      width: 25
+      height: 46
+    spriteID: a132cafc461aa314b96f4056152c7018
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 273, y: 106}
+  - name: JesterP1_Frame_24
+    originalName: 
+    pivot: {x: 0.4615385, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 106
+      width: 26
+      height: 47
+    spriteID: b3dcd70b783481045aa49bf5edb4918a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 106}
+  - name: JesterP1_Frame_25
+    originalName: 
+    pivot: {x: 0.5217391, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 394
+      y: 53
+      width: 23
+      height: 45
+    spriteID: bab8c1593acdc0948a118b9e17e7273b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 394, y: 53}
+  - name: JesterP1_Frame_26
+    originalName: 
+    pivot: {x: 0.5357143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 53
+      width: 28
+      height: 43
+    spriteID: 9e607aacd7e618849be097e2bd43e8a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 53}
+  - name: JesterP1_Frame_27
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 243
+      y: 161
+      width: 21
+      height: 44
+    spriteID: fdc37a46e42273e49aec116a26a36aad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 243, y: 161}
+  - name: JesterP1_Frame_28
+    originalName: 
+    pivot: {x: 0.4074074, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 53
+      width: 27
+      height: 45
+    spriteID: b9ea2d573fae61d41b7779b0e9c5e125
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 192, y: 53}
+  - name: JesterP1_Frame_29
+    originalName: 
+    pivot: {x: 0.42857146, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 53
+      width: 28
+      height: 44
+    spriteID: 2066aa01263fecf4d9ed973dcfeedc95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 53}
+  - name: JesterP1_Frame_30
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 272
+      y: 161
+      width: 21
+      height: 44
+    spriteID: daad5c3b86191b144bfb23a3c17ac012
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 272, y: 161}
+  - name: JesterP1_Frame_31
+    originalName: 
+    pivot: {x: 0.5217391, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 425
+      y: 53
+      width: 23
+      height: 45
+    spriteID: 96a5c7f6574864a4b80bb514d00600a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 425, y: 53}
+  - name: JesterP1_Frame_32
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 306
+      y: 106
+      width: 25
+      height: 46
+    spriteID: f766e282f26027c448ebce48aa7c742c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 306, y: 106}
+  - name: JesterP1_Frame_33
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 106
+      width: 25
+      height: 47
+    spriteID: 2f585aecfe6045e41a43553976ebabc7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 106}
+  - name: JesterP1_Frame_34
+    originalName: 
+    pivot: {x: 0.51724136, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 106
+      width: 29
+      height: 47
+    spriteID: f5c430864454f834f835e444a16e5b2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 106}
+  - name: JesterP1_Frame_35
+    originalName: 
+    pivot: {x: 0.6363636, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 44
+      height: 41
+    spriteID: 2be8a1c80804418408783869c39b63c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: JesterP1_Frame_36
+    originalName: 
+    pivot: {x: 0.6458334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 4
+      width: 48
+      height: 33
+    spriteID: ec4c6c6110a11aa439381a8e3a43785e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 4}
+  - name: JesterP1_Frame_37
+    originalName: 
+    pivot: {x: 0.64, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 328
+      y: 161
+      width: 50
+      height: 8
+    spriteID: 4776b2d49d7c5c846af73a6f7bcd52c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 328, y: 161}
+  - name: JesterP1_Frame_38
+    originalName: 
+    pivot: {x: 0.47826087, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 161
+      width: 23
+      height: 47
+    spriteID: f3a238d1ad79bef469df038cc7b1ddfc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 161}
+  - name: JesterP1_Frame_39
+    originalName: 
+    pivot: {x: 0.52, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 339
+      y: 106
+      width: 25
+      height: 46
+    spriteID: f9dca19e73e94ed47850db77f47c0f0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 339, y: 106}
+  - name: JesterP1_Frame_40
+    originalName: 
+    pivot: {x: 0.39999998, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 361
+      y: 53
+      width: 25
+      height: 43
+    spriteID: a4d2d4195718ea14886213bf32e9975f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 361, y: 53}
+  - name: JesterP1_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 53
+      width: 32
+      height: 45
+    spriteID: 425cbc15f68093f4f9cb9c1b6b4c3870
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 53}
+  - name: JesterP1_Frame_42
+    originalName: 
+    pivot: {x: 0.5714286, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 156
+      y: 53
+      width: 28
+      height: 44
+    spriteID: 1b448a2f1ce9ea4489a28258052f5357
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 156, y: 53}
+  - name: JesterP1_Frame_43
+    originalName: 
+    pivot: {x: 0.52, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 372
+      y: 106
+      width: 25
+      height: 46
+    spriteID: 01c851a14ec1246498e810044e65e70e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 372, y: 106}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1069992492
+    name: JesterP1
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: JesterP1_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 47
+      spriteId: 45a340395ac690d4bbb9e77d5894562c
+    - name: JesterP1_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 46
+      spriteId: d28b9eb3ddfecee42a45218f07bcb2cc
+    - name: JesterP1_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 45
+      spriteId: 59c2ff31316daaa41947d3ff774b216f
+    - name: JesterP1_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 46
+      spriteId: 18c491e8eaabf8d448ddc2dddcef4952
+    - name: JesterP1_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 21
+        y: 0
+        width: 24
+        height: 45
+      spriteId: c01843ca10369f14b8718b6c31e690e3
+    - name: JesterP1_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 21
+        y: 0
+        width: 21
+        height: 44
+      spriteId: ac9e39e0afe18fb4daadb0dd69903e7d
+    - name: JesterP1_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 21
+        y: 0
+        width: 21
+        height: 46
+      spriteId: 97e9f2b3038f1f14a8557c55074171a0
+    - name: JesterP1_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 21
+        y: 0
+        width: 22
+        height: 45
+      spriteId: 80d0e0794bd08ee46a5061d88112496e
+    - name: JesterP1_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 21
+        y: 0
+        width: 23
+        height: 43
+      spriteId: 9cc87a2b0307228428b7875b3f80c975
+    - name: JesterP1_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 21
+        y: 0
+        width: 21
+        height: 46
+      spriteId: b8bbd7a93d190044fa8a9560c3c4012f
+    - name: JesterP1_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 46
+      spriteId: 893967a7cc6a4b44e84171bd7407e896
+    - name: JesterP1_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 41
+      spriteId: 1bd0f95f1033cb24eaa9ed22c9dd2b03
+    - name: JesterP1_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 23
+        y: 0
+        width: 19
+        height: 47
+      spriteId: 4311a87863b5a8645855b06bb14ded36
+    - name: JesterP1_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 20
+        y: 9
+        width: 25
+        height: 44
+      spriteId: 65a89d7bbf3afeb48931db4220c27997
+    - name: JesterP1_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 19
+        y: 14
+        width: 27
+        height: 42
+      spriteId: 5ee34d339c6834843945862362220f46
+    - name: JesterP1_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 20
+        y: 10
+        width: 25
+        height: 44
+      spriteId: 6391c831ccd9aab4a9d5ae1737ed30b4
+    - name: JesterP1_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 21
+        y: 0
+        width: 21
+        height: 49
+      spriteId: 3421cf4449ba6304995a5555048804ca
+    - name: JesterP1_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 41
+      spriteId: 70f174bbe07c5ec4ba366a6e31037691
+    - name: JesterP1_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 21
+        y: 0
+        width: 23
+        height: 47
+      spriteId: 43490dc8f696fc74e85c9fe770fc9a86
+    - name: JesterP1_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 19
+        y: 0
+        width: 25
+        height: 46
+      spriteId: c9ae91d0f23aefe469fdde73f1ce7dc1
+    - name: JesterP1_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 16
+        y: 0
+        width: 28
+        height: 44
+      spriteId: 3e96ca5fea71d80478b113ba256c3c10
+    - name: JesterP1_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 16
+        y: 0
+        width: 32
+        height: 45
+      spriteId: 861ac7289dc959d43add90d67bc78543
+    - name: JesterP1_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 22
+        y: 0
+        width: 25
+        height: 43
+      spriteId: 5d6679d29d383f84aba14245ccdd7d24
+    - name: JesterP1_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 19
+        y: 0
+        width: 25
+        height: 46
+      spriteId: a132cafc461aa314b96f4056152c7018
+    - name: JesterP1_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 47
+      spriteId: b3dcd70b783481045aa49bf5edb4918a
+    - name: JesterP1_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 20
+        y: 0
+        width: 23
+        height: 45
+      spriteId: bab8c1593acdc0948a118b9e17e7273b
+    - name: JesterP1_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 17
+        y: 0
+        width: 28
+        height: 43
+      spriteId: 9e607aacd7e618849be097e2bd43e8a8
+    - name: JesterP1_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 23
+        y: 0
+        width: 21
+        height: 44
+      spriteId: fdc37a46e42273e49aec116a26a36aad
+    - name: JesterP1_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 21
+        y: 0
+        width: 27
+        height: 45
+      spriteId: b9ea2d573fae61d41b7779b0e9c5e125
+    - name: JesterP1_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 20
+        y: 0
+        width: 28
+        height: 44
+      spriteId: 2066aa01263fecf4d9ed973dcfeedc95
+    - name: JesterP1_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 23
+        y: 0
+        width: 21
+        height: 44
+      spriteId: daad5c3b86191b144bfb23a3c17ac012
+    - name: JesterP1_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 20
+        y: 0
+        width: 23
+        height: 45
+      spriteId: 96a5c7f6574864a4b80bb514d00600a6
+    - name: JesterP1_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 46
+      spriteId: f766e282f26027c448ebce48aa7c742c
+    - name: JesterP1_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 47
+      spriteId: 2f585aecfe6045e41a43553976ebabc7
+    - name: JesterP1_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 17
+        y: 0
+        width: 29
+        height: 47
+      spriteId: f5c430864454f834f835e444a16e5b2f
+    - name: JesterP1_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 4
+        y: 0
+        width: 44
+        height: 41
+      spriteId: 2be8a1c80804418408783869c39b63c6
+    - name: JesterP1_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 1
+        y: 0
+        width: 48
+        height: 33
+      spriteId: ec4c6c6110a11aa439381a8e3a43785e
+    - name: JesterP1_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 0
+        y: 0
+        width: 50
+        height: 8
+      spriteId: 4776b2d49d7c5c846af73a6f7bcd52c2
+    - name: JesterP1_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 21
+        y: 0
+        width: 23
+        height: 47
+      spriteId: f3a238d1ad79bef469df038cc7b1ddfc
+    - name: JesterP1_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 19
+        y: 0
+        width: 25
+        height: 46
+      spriteId: f9dca19e73e94ed47850db77f47c0f0e
+    - name: JesterP1_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 22
+        y: 0
+        width: 25
+        height: 43
+      spriteId: a4d2d4195718ea14886213bf32e9975f
+    - name: JesterP1_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 16
+        y: 0
+        width: 32
+        height: 45
+      spriteId: 425cbc15f68093f4f9cb9c1b6b4c3870
+    - name: JesterP1_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 16
+        y: 0
+        width: 28
+        height: 44
+      spriteId: 1b448a2f1ce9ea4489a28258052f5357
+    - name: JesterP1_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 19
+        y: 0
+        width: 25
+        height: 46
+      spriteId: 01c851a14ec1246498e810044e65e70e
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}

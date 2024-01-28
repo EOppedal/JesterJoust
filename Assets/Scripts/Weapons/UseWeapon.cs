@@ -11,6 +11,8 @@ namespace Weapons
         public Weapon currentWeapon;
         public GameObject holdingWeapon;
         
+        private Animator _animator;
+        
         #region ---Debugging---
         [Header("Debug")]
         [SerializeField] private bool isDebugging;
@@ -25,6 +27,7 @@ namespace Weapons
         {
             _playerScript = GetComponent<PlayerScript>();
             _playerSpecific = GetComponent<PlayerSpecific>();
+            _animator = GetComponent<Animator>();
         }
         
         private void Update()
@@ -45,8 +48,10 @@ namespace Weapons
             
             if (_playerScript.playerFacingDirection == Vector2.zero)
             {
-                _playerScript.playerFacingDirection = Vector2.right;
+                _playerScript.playerFacingDirection = Vector2.right * transform.localScale.x;
             }
+            
+            _animator.Play("Throw");
             
             var o = Instantiate(currentWeapon.prefab, transform.position + (Vector3.up * 0.75f), Quaternion.identity);
             o.transform.Rotate(0, 0, Vector2.Angle(transform.up, _playerScript.playerFacingDirection));

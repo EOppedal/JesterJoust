@@ -8,76 +8,73 @@ public class PlayerScript : MonoBehaviour, IDamageable
     [SerializeField] private KeyCode DownKey = KeyCode.S;
     [SerializeField] private KeyCode JumpKey = KeyCode.Y;
 
-    public float MoveSpeed;
-    public float JumpSpeed;
-    public float FallSpeed;
+    [SerializeField] float MoveSpeed;
+    [SerializeField] float JumpSpeed;
+    [SerializeField] float FallSpeed;
     
     public Vector2 playerFacingDirection;
     
     private SpriteRenderer _spriteRenderer;
     private PlayerSpecific _playerSpecific;
+    private Animator _animator;
+    private Rigidbody2D _rigidbody;
 
-    private float Horizontal;
-    private bool IsFacingRight = true;
-    private bool MovingRight = false;
-    private bool MovingLeft = false;
-
-    [SerializeField] private Rigidbody2D RB;
-    [SerializeField] private BoxCollider2D BC;
-    [SerializeField] private Transform GroundCheck;
-    [SerializeField] private LayerMask GroundLayer;
+    private float _horizontalMovement;
+    [SerializeField] private LayerMask groundLayer;
 
     private void Start()
     {
         _playerSpecific = GetComponent<PlayerSpecific>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         PlayerDirection();
+        _horizontalMovement = playerFacingDirection.x;
+
+        var animation = "Idle";
         
-        if (Input.GetKeyDown(RightKey))
+        if (playerFacingDirection.x != 0)
         {
-            Horizontal = 1f;
-            MovingRight = true;
-        }
-        if (Input.GetKeyDown(LeftKey))
-        {
-            Horizontal = -1f;
-            MovingLeft = true;
-        }
-
-        if (Input.GetKeyUp(RightKey))
-        {
-            MovingRight = false;
-        }
-        if (Input.GetKeyUp(LeftKey))
-        {
-            MovingLeft = false;
-        }
-
-        if (MovingRight == false && MovingLeft == false && is_Grounded())
-        {
-            Horizontal = 0f;
+            animation = "Walk";
         }
 
         if (Input.GetKeyDown(JumpKey) && is_Grounded())
         {
-            RB.velocity = new Vector2(RB.velocity.x, JumpSpeed);
+            _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, JumpSpeed);
         }
 
-        if (Input.GetKeyUp(JumpKey) && RB.velocity.y > 0f)
+        if (Input.GetKeyUp(JumpKey) && _rigidbody.velocity.y > 0f)
         {
-            RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y * 0.5f);
+            _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * 0.5f);
         }
 
         if (Input.GetKeyDown(DownKey))
         {
-            RB.velocity = new Vector2(RB.velocityX, FallSpeed);
+            _rigidbody.velocity = new Vector2(_rigidbody.velocityX, FallSpeed);
+        }
+
+        if (_rigidbody.velocity.y > 0f)
+        {
+            animation = "Jump";
         }
         
+        _animator.Play(animation);
+        
         Flip();
+    }
+
+    private void FixedUpdate()
+    {
+        _rigidbody.velocity = new Vector2(_horizontalMovement * MoveSpeed, _rigidbody.velocity.y);
+    }
+
+    private bool is_Grounded()
+    {
+        return Physics2D.OverlapCircle(transform.position, 0.1f, groundLayer);
     }
 
     private void PlayerDirection()
@@ -92,25 +89,15 @@ public class PlayerScript : MonoBehaviour, IDamageable
         playerFacingDirection = direction;
     }
 
-    private void FixedUpdate()
-    {
-        RB.velocity = new Vector2(Horizontal * MoveSpeed, RB.velocity.y);
-    }
-
-    private bool is_Grounded()
-    {
-        return Physics2D.OverlapCircle(GroundCheck.position, 1.1f, GroundLayer);
-    }
-
     private void Flip()
     {
-        if (IsFacingRight == true && Horizontal < 0f || IsFacingRight == false && Horizontal > 0f)
+        var transform1 = transform;
+        transform1.localScale = playerFacingDirection.x switch
         {
-            IsFacingRight = !IsFacingRight;
-            Vector3 tempScale = transform.localScale;
-            tempScale.x *= -1f;
-            transform.localScale = tempScale;
-        }
+            < 0f => new Vector3(-1, 1, 1),
+            > 0f => Vector3.one,
+            _ => transform1.localScale
+        };
     }
 
     public void TakeDamage(bool isLethal)
@@ -128,8 +115,5 @@ public class PlayerScript : MonoBehaviour, IDamageable
                 Debug.Log("Player not valid");
                 break;
         }
-
-        // Debug.Log("Player dead", gameObject);
-        // _spriteRenderer.color = Color.red;
     }
 }

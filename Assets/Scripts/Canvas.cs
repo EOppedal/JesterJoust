@@ -1,17 +1,16 @@
 using UnityEngine;
-using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class Canvas : MonoBehaviour
 {
-    [SerializeField] private Text text;
-
-    private void Start()
+    [SerializeField] private string sceneName;
+    
+    public void StartGame()
     {
-        ScoreManager.Victory += DisplayWinner;
+        SceneManager.LoadScene(sceneName);
     }
 
-    private void DisplayWinner(string winner)
+    public void QuitGame()
     {
-        text.text = winner + " Wins";
+        Application.Quit();
     }
 }
