@@ -3307,6 +3307,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6049994002399476060, guid: 99a1a8b05b7150e43a9e13becb0ad1b7, type: 3}
+      propertyPath: interactKey
+      value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: 6049994002399476060, guid: 99a1a8b05b7150e43a9e13becb0ad1b7, type: 3}
       propertyPath: holdingWeapon
       value: 
       objectReference: {fileID: 0}
