@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     [SerializeField] private GameObject canvas;
-    [SerializeField] private Text winnerText;
+    [SerializeField] private Image player1Wins;
+    [SerializeField] private Image player2Wins;
     [SerializeField] private Text player1Score;
     [SerializeField] private Text player2Score;
     
@@ -35,7 +36,8 @@ public class ScoreManager : MonoBehaviour
     
     private void DisplayWinner(string winner)
     {
-        winnerText.text = winner + " Wins";
+        player1Wins.enabled = winner == "Player1";
+        player2Wins.enabled = winner == "Player2";
     }
     
     private void _player1GainPoints()
