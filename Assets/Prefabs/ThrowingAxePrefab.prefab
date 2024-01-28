@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -9133848579069966561}
   - component: {fileID: -41717594093568770}
   m_Layer: 0
-  m_Name: ThrowingKnifePrefab
+  m_Name: ThrowingAxePrefab
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

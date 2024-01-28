@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b594819770a06944e872f1c971d9d9ff, type: 3}
-  m_Name: ThrowingKnife
+  m_Name: ThrowingAxe
   m_EditorClassIdentifier: 
   prefab: {fileID: 2265701727150319621, guid: 6bf3180498ce9d14b8c6746ee00d3125, type: 3}
   isLethal: 1

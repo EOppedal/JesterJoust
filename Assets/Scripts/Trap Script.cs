@@ -48,6 +48,7 @@ public class TrapScript : MonoBehaviour, IDamageable
     public void TakeDamage(bool isLethal)
     {
         _rigidbody.gravityScale = 1;
+        _rigidbody.velocity = Vector3.zero;
 
         // RB.isKinematic = false;
         // FallSpeed = -7.5f;
