@@ -10,6 +10,7 @@ namespace Weapons
         private PlayerSpecific _playerSpecific;
         public Weapon currentWeapon;
         public GameObject holdingWeapon;
+        
         #region ---Debugging---
         [Header("Debug")]
         [SerializeField] private bool isDebugging;

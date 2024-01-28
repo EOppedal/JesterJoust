@@ -6,7 +6,7 @@ public class Interact : MonoBehaviour
     [SerializeField] private KeyCode interactKey = KeyCode.E;
     [SerializeField] private GameObject inTriggerIndicator;
     
-    public GameObject holdingWeapon;
+    public SpriteRenderer holdingWeapon;
     private UseWeapon _useWeapon;
     private IWeaponPickup _weapon;
     private IDoor _door;
@@ -16,6 +16,8 @@ public class Interact : MonoBehaviour
     private void Start()
     {
         _useWeapon = GetComponent<UseWeapon>();
+        holdingWeapon = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        holdingWeapon.enabled = false;
     }
     
     private void Update()
@@ -24,7 +26,8 @@ public class Interact : MonoBehaviour
         {
             _useWeapon.currentWeapon = _weapon.Pickup();
             inTriggerIndicator.SetActive(false);
-            holdingWeapon.GetComponent<Renderer>().enabled = true;
+            holdingWeapon.enabled = true;
+            holdingWeapon.sprite = _useWeapon.currentWeapon.prefab.GetComponent<SpriteRenderer>().sprite;
         }
         
         if (Input.GetKeyDown(interactKey) && _isInInteractTrigger)
