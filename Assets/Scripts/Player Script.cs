@@ -7,14 +7,13 @@ public class PlayerScript : MonoBehaviour, IDamageable
     [SerializeField] private KeyCode UpKey = KeyCode.W;
     [SerializeField] private KeyCode DownKey = KeyCode.S;
     [SerializeField] private KeyCode JumpKey = KeyCode.Y;
-
+    
     [SerializeField] float MoveSpeed;
     [SerializeField] float JumpSpeed;
     [SerializeField] float FallSpeed;
     
     public Vector2 playerFacingDirection;
     
-    private SpriteRenderer _spriteRenderer;
     private PlayerSpecific _playerSpecific;
     private Animator _animator;
     private Rigidbody2D _rigidbody;
@@ -25,7 +24,6 @@ public class PlayerScript : MonoBehaviour, IDamageable
     private void Start()
     {
         _playerSpecific = GetComponent<PlayerSpecific>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
     }
