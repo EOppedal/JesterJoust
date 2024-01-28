@@ -18,6 +18,7 @@ public class ScoreManager : MonoBehaviour
     private static readonly Action Restart = ResetRound;
     public static Action Player1WinRound;
     public static Action Player2WinRound;
+    public static Action PlayerWin;
 
     private void Start()
     {
@@ -45,6 +46,7 @@ public class ScoreManager : MonoBehaviour
         {
             canvas.SetActive(true);
             DisplayWinner("Player1");
+            PlayerWin.Invoke();
             return;
         }
         
@@ -59,6 +61,7 @@ public class ScoreManager : MonoBehaviour
         {
             canvas.SetActive(true);
             DisplayWinner("Player2");
+            PlayerWin.Invoke();
         }
         
         Restart.Invoke();
@@ -88,6 +91,9 @@ public class ScoreManager : MonoBehaviour
     {
         canvas.SetActive(false);
         SceneManager.LoadScene("MainMenu");
+
+        Destroy(GameObject.FindWithTag("GameController"));
+        
         Destroy(gameObject);
     }
 }

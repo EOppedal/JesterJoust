@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Weapon
+  - SoundManager
   layers:
   - Default
   - TransparentFX

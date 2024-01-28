@@ -36,7 +36,10 @@ public class Interact : MonoBehaviour
         
         if (Input.GetKeyDown(interactKey) && _isInInteractTrigger)
         {
-            transform.position = _door.Enter();
+            var pos = _door.Enter();
+            var transform1 = transform;
+            pos.y = transform1.position.y;
+            transform1.position = pos;
             inTriggerIndicator.SetActive(false);
         }
     }

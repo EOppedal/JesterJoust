@@ -20,6 +20,8 @@ public class PlayerScript : MonoBehaviour, IDamageable
     private Animator _animator;
     private Rigidbody2D _rigidbody;
 
+    private bool _isOver;
+
     private float _horizontalMovement;
     [SerializeField] private LayerMask groundLayer;
 
@@ -28,10 +30,21 @@ public class PlayerScript : MonoBehaviour, IDamageable
         _playerSpecific = GetComponent<PlayerSpecific>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+
+        ScoreManager.PlayerWin += OnWin;
+    }
+
+    private void OnWin()
+    {
+        _isOver = true;
     }
 
     private void Update()
     {
+        if (_isOver)
+        {
+            return;
+        }
         PlayerDirection();
         _horizontalMovement = playerFacingDirection.x;
 

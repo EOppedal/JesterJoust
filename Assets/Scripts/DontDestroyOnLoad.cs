@@ -4,8 +4,8 @@ public class DontDestroyOnLoad : MonoBehaviour
 {
     private void Start()
     {
-        var go = GameObject.Find(gameObject.name);
-        if (go != null) Destroy(go);
+        var go = GameObject.FindGameObjectsWithTag("SoundManager");
+        if (go.Length > 1) Destroy(gameObject);
         
         DontDestroyOnLoad(gameObject);
     }
