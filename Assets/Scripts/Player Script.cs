@@ -12,6 +12,8 @@ public class PlayerScript : MonoBehaviour, IDamageable
     [SerializeField] float JumpSpeed;
     [SerializeField] float FallSpeed;
     
+    //public AudioSource audioSource;
+    
     public Vector2 playerFacingDirection;
     
     private PlayerSpecific _playerSpecific;
@@ -105,9 +107,11 @@ public class PlayerScript : MonoBehaviour, IDamageable
         {
             case PlayerSpecific.Player.Player1:
                 ScoreManager.Player2WinRound();
+                //audioSource.Play();
                 break;
             case PlayerSpecific.Player.Player2:
                 ScoreManager.Player1WinRound();
+                //audioSource.Play();
                 break;
             default:
                 Debug.Log("Player not valid");
